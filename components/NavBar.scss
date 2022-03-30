@@ -1,0 +1,17 @@
+.navBar {
+  padding: 1em 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    margin: unset;
+    padding: unset;
+    list-style: none;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+}
