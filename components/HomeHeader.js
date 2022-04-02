@@ -2,8 +2,10 @@ import React from "react";
 
 export function HomeHeader() {
   return (
-    <header>
-      <h2>My personal blog dedicated to web and mobile development content.</h2>
-    </header>
+    <div className="container">
+      <header className="Header">
+        <h1>Learn web and mobile development the efficient way</h1>
+      </header>
+    </div>
   );
 }

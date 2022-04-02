@@ -19,7 +19,7 @@ export default function postPage({ post }) {
 
 export async function getStaticProps({ params }) {
   const allPosts = await axios.get(
-    `http://localhost:1337/api/posts/${params.id}`
+    `https://banana-tart-23437.herokuapp.com/api/posts/${params.id}`
   );
 
   return {
@@ -29,9 +29,10 @@ export async function getStaticProps({ params }) {
   };
 }
 
-//Gerar todos os posts por id
 export async function getStaticPaths() {
-  const allPosts = await axios.get("http://localhost:1337/api/posts");
+  const allPosts = await axios.get(
+    "https://banana-tart-23437.herokuapp.com/api/posts"
+  );
   const paths = allPosts.data.data.map((post) => {
     return { params: { id: post.id.toString() } };
   });

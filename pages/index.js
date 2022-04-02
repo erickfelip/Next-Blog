@@ -13,14 +13,13 @@ function Home({ posts }) {
 }
 
 export default Home;
-//SSG
 export async function getStaticProps() {
-  const postsRes = await axios.get("http://localhost:1337/api/posts");
+  const postsRes = await axios.get(
+    "https://banana-tart-23437.herokuapp.com/api/posts"
+  );
   return {
     props: {
       posts: postsRes.data.data,
     },
   };
 }
-
-//postsRes.data.data[0].attributes
