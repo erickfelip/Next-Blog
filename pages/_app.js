@@ -5,13 +5,13 @@ import "../styles/index.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className="wrapper">
       <NavBar />
       <div className="container">
         <Component {...pageProps} />
       </div>
-      < Footer />
-    </>
+      <Footer />
+    </div>
   );
 }
 
