@@ -7,13 +7,15 @@ export default function postPage({ post }) {
   const htmlContent = md.render(post.attributes.content);
 
   return (
-    <article>
-      <header>
-        <h1>{post.attributes.title}</h1>
-        <h2>{post.attributes.description}</h2>
-      </header>
-      <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
-    </article>
+    <div className="wrapper">
+      <article>
+        <header>
+          <h1>{post.attributes.title}</h1>
+          <h2>{post.attributes.description}</h2>
+        </header>
+        <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
+      </article>
+    </div>
   );
 }
 

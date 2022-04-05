@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function Footer() {
@@ -9,24 +8,23 @@ export function Footer() {
         <hr />
         <p>Contact me</p>
         <div className="Buttons">
-          <Link
+          <a
             href="https://www.linkedin.com/in/erick-felipe-141311215/"
-            passHref
+            target="_blank"
+            rel="noreferrer"
           >
-            <a>
-              <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
-            </a>
-          </Link>
-          <Link href="https://github.com/erickfelip" passHref>
-            <a>
-              <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
-            </a>
-          </Link>
-          <Link href="https://t.me/Erickfelipe44" passHref>
-            <a>
-              <FontAwesomeIcon icon={["fab", "telegram"]} size="2x" />
-            </a>
-          </Link>
+            <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x" />
+          </a>
+          <a
+            href="https://github.com/erickfelip"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={["fab", "github"]} size="1x" />
+          </a>
+          <a href="https://t.me/Erickfelipe44" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={["fab", "telegram"]} size="1x" />
+          </a>
         </div>
       </div>
     </footer>

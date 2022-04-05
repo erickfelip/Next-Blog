@@ -8,17 +8,14 @@ hr {
 
 .Container{
     a{
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         cursor: pointer
     }
     .Buttons{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        max-width: 10%; 
-        margin: auto; 
-        gap: 10px;
+        justify-content: center; 
+        gap: 10px; 
     }
     align-items: center;
     justify-content: center;
