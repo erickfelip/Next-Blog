@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PostPreview from "./PostPreview"
+import PostPreview from "./PostPreview";
 
 export function HomeLatestPost({ posts }) {
   const [latestPosts, setLatestPosts] = useState([]);
@@ -8,7 +8,7 @@ export function HomeLatestPost({ posts }) {
     setLatestPosts(posts.slice(0, 5));
   }, [posts]);
 
-function renderPostPreview() {
+  function renderPostPreview() {
     return latestPosts.map((post) => {
       return <PostPreview post={post} key={post.id} />;
     });
@@ -17,8 +17,7 @@ function renderPostPreview() {
   return (
     <>
       <h2>Latest posts</h2>
-       {renderPostPreview()} 
+      {renderPostPreview()}
     </>
   );
 }
-

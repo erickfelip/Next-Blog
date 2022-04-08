@@ -1,24 +1,24 @@
 hr {
-    background-color: #f5f5f5;
-    border: none;
-    display: block;
-    height: 2px;
-    margin: 1.5rem 0;
+  background-color: #f5f5f5;
+  border: none;
+  display: block;
+  height: 2px;
+  margin: 1.5rem 0;
 }
 
-.Container{
-    a{
-        cursor: pointer
-    }
-    .Buttons{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center; 
-        gap: 10px; 
-    }
+.Container {
+  a {
+    cursor: pointer;
+  }
+  .Buttons {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align:center;
-    font-size: 1.5rem;
+    gap: 10px;
+  }
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
 }

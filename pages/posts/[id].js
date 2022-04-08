@@ -11,7 +11,6 @@ export default function postPage({ post }) {
       <article>
         <header>
           <h1>{post.attributes.title}</h1>
-          <h2>{post.attributes.description}</h2>
         </header>
         <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
       </article>

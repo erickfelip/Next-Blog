@@ -1,16 +1,26 @@
 .Header {
-    h1 {
-        font-size: 2rem;
-        text-align:center;
-        background-image: radial-gradient(circle at -14.09% 20.12%, #0069f2 0, #0063f1 12.5%, #005dee 25%, #0055e9 37.5%, #004be1 50%, #563fd7 62.5%, #7930cb 75%, #9219bd 87.5%, #a500ae 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent; 
-    }
-    h2 {
-      font-size: 2rem;
-      text-align:center;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-    }
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    background-image: radial-gradient(
+      circle at -14.09% 20.12%,
+      #0069f2 0,
+      #0063f1 12.5%,
+      #005dee 25%,
+      #0055e9 37.5%,
+      #004be1 50%,
+      #563fd7 62.5%,
+      #7930cb 75%,
+      #9219bd 87.5%,
+      #a500ae 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
