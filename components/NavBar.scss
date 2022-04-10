@@ -5,6 +5,13 @@
     justify-content: space-between;
     align-items: center;
   }
+  .home{
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+      filter: brightness(0.75);
+    }
+  }
   ul {
     margin: unset;
     padding: unset;
@@ -14,4 +21,29 @@
   .title {
     font-size: 1.5em;
   }
+  button{
+    margin-left: auto;
+  }
+  .allPosts{
+    height: 3.2rem;
+    border-radius: 1.2rem;
+    color: white;
+
+    background-image: linear-gradient(to right top, rgb(2, 9, 14), rgb(2, 9, 15), rgb(2, 9, 16), rgb(2, 9, 18), rgb(2, 9, 18));
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px, rgb(0 0 0 / 12%) 0px 1px 2px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+      filter: brightness(0.9);
+      box-shadow: 0 2px 2px -1px rgba(0, 105, 242), 0 3px 2px rgba(146, 25, 189);
+    }
+    border:0;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 }
