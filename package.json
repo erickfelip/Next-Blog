@@ -13,7 +13,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
-    "aos": "^2.3.4",
     "axios": "^0.26.1",
     "markdown-it": "^12.3.2",
     "next": "12.1.0",
